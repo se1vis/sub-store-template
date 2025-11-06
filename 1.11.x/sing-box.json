@@ -114,11 +114,6 @@
         "outbound": "netflix"
       },
       {
-        "rule_set": "bahamut_domain",
-        "action": "route",
-        "outbound": "bahamut"
-      },
-      {
         "rule_set": "youtube_domain",
         "action": "route",
         "outbound": "youtube"
@@ -198,13 +193,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/apple.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "bahamut_domain",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bahamut.srs",
         "download_detour": "direct"
       },
       {
@@ -412,29 +400,6 @@
     },
     {
       "tag": "netflix",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "kr",
-        "kr-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
-      ],
-      "default": "proxy"
-    },
-    {
-      "tag": "bahamut",
       "type": "selector",
       "outbounds": [
         "proxy",
